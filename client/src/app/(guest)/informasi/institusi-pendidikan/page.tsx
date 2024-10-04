@@ -12,14 +12,25 @@ const DaftarInstitusi: React.FC = () => {
             </div>
 
             {/* Header Section */}
-            <div className="container mx-auto text-center py-12">
-                <h1 className="text-3xl md:text-5xl font-extrabold text-gray-800">
+            <div
+                className="container mx-auto text-center py-24"
+                style={{
+                    backgroundImage: 'url("/tugu_adipura.jpg")',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                    color: 'white',  // Ensure the text is visible over the background
+                    height: '350px',
+                }}
+            >
+
+                <h1 className="text-3xl md:text-5xl font-extrabold">
                     Daftar Institusi di Bandar Lampung
                 </h1>
             </div>
 
             {/* Institutions Container */}
-            <div className="container mx-auto flex justify-center items-center px-4 md:px-0">
+            <div className="container mx-auto py-20 flex justify-center items-center px-4 md:px-0">
                 {/* Left Arrow for Slider Navigation */}
                 <button className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-full shadow-lg transition-all duration-300 mr-4">
                     <svg

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const InstansiCard = () => {
   return (
-    <div className="bg-white p-6 rounded-2xl max-w-sm shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-200">
+    <div className="bg-blue-200 p-6 rounded-2xl max-w-sm shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-200">
       <h2 className="text-2xl font-semibold mb-4 text-gray-800">Institut Teknologi Sumatera</h2>
       
       {/* Image Section */}
@@ -17,10 +17,10 @@ const InstansiCard = () => {
       </div>
 
       {/* Subheading */}
-      <h3 className="text-lg font-medium mb-2 text-gray-700">ITERA</h3>
+      <h3 className="text-lg font-medium mb-2 text-black">ITERA</h3>
 
       {/* Location Section */}
-      <div className="flex items-center mb-4 text-gray-500">
+      <div className="flex items-center mb-4 text-black">
         <MapPin className="mr-2" size={20} />
         <p>Jati Agung, Lampung Selatan, Lampung</p>
       </div>
@@ -31,9 +31,9 @@ const InstansiCard = () => {
       </p>
 
       {/* Button */}
-      <Link href="/informasi/instansi/detail-instansi" passHref>
+      <Link href="/informasi/institusi-pendidikan/detail-institusi" passHref>
         <button className="bg-blue-600 text-white py-3 px-4 rounded-xl w-full hover:bg-blue-700 transition-colors duration-300 text-sm font-medium">
-          Lihat Detail
+          Lihat Profil Institusi
         </button>
       </Link>
     </div>

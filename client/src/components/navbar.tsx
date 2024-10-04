@@ -135,10 +135,10 @@ const Navbar: React.FC = () => {
                 UMKM
               </Link>
               <Link
-                href="/informasi/instansi"
+                href="/informasi/institusi-pendidikan"
                 className="block px-4 py-2 text-black hover:bg-gray-200"
               >
-                Instansi
+                Institusi Pendidikan
               </Link>
             </div>
           )}

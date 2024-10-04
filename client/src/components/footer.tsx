@@ -26,36 +26,29 @@ function Footer() {
 
         {/* Social media icons */}
         <div className="flex items-center space-x-4">
-          <Link href="#">
+          <Link href="https://x.com/KominfotikLpg">
             <Image
-              src="/path-to-icons/x-icon.png" // Replace with the actual path to the X (formerly Twitter) icon
+              src="/x.png" // Replace with the actual path to the X (formerly Twitter) icon
               alt="X"
               width={40}
               height={40}
               className="w-10 h-10"
             />
           </Link>
-          <Link href="#">
+
+          <Link href="https://instagram.com/diskominfotik.lampung">
             <Image
-              src="/path-to-icons/facebook-icon.png" // Replace with the actual path to the Facebook icon
-              alt="Facebook"
-              width={40}
-              height={40}
-              className="w-10 h-10"
-            />
-          </Link>
-          <Link href="#">
-            <Image
-              src="/path-to-icons/instagram-icon.png" // Replace with the actual path to the Instagram icon
+              src="/instagram.png" // Replace with the actual path to the Instagram icon
               alt="Instagram"
               width={40}
               height={40}
               className="w-10 h-10"
             />
           </Link>
-          <Link href="#">
+
+          <Link href="https://youtube.com/@diskominfotiklampung">
             <Image
-              src="/path-to-icons/youtube-icon.png" // Replace with the actual path to the YouTube icon
+              src="/youtube.png" // Replace with the actual path to the YouTube icon
               alt="YouTube"
               width={40}
               height={40}

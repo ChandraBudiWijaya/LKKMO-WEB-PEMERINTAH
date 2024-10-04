@@ -7,7 +7,7 @@ const InfoSection: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Kartu Institusi Pendidikan */}
                 <a
-                    href="/informasi/instansi"
+                    href="/informasi/institusi-pendidikan"
                     className="block bg-white rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-500 transform hover:scale-105 overflow-hidden">
                     <div className="flex justify-center mb-4">
                         <img
