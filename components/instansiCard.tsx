@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const InstansiCard = () => {
   return (
-    <div className="bg-white p-6 rounded-2xl max-w-sm shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200">
+    <div className="bg-white p-6 rounded-2xl max-w-sm shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-200">
       <h2 className="text-2xl font-semibold mb-4 text-gray-800">Institut Teknologi Sumatera</h2>
       
       {/* Image Section */}
