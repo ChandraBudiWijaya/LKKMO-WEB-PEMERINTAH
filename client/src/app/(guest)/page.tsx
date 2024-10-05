@@ -1,7 +1,8 @@
 'use client'
 
-import Image from 'next/image'
-import { useState } from 'react'
+import Image from 'next/image';
+import { useState } from 'react';
+import Link from 'next/link';
 
 export default function Home() {
     const [isInfoActive, setIsInfoActive] = useState(false)
@@ -14,7 +15,7 @@ export default function Home() {
                     {/* Left Image */}
                     <div className="flex justify-center">
                         <Image
-                            src="/path-to-image-1.jpg"
+                            src="/kota_1.png"
                             alt="City Image 1"
                             width={350}
                             height={250}
@@ -42,7 +43,7 @@ export default function Home() {
                     {/* Right Image */}
                     <div className="flex justify-center">
                         <Image
-                            src="/path-to-image-2.jpg"
+                            src="/kota_2.png"
                             alt="City Image 2"
                             width={350}
                             height={250}
@@ -102,7 +103,7 @@ export default function Home() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                             <Image
-                                src="/path-to-news-image.jpg"
+                                src="/berita.png"
                                 alt="News"
                                 width={600}
                                 height={300}
@@ -121,7 +122,7 @@ export default function Home() {
                         </div>
                         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                             <Image
-                                src="/path-to-news-image.jpg"
+                                src="/berita.png"
                                 alt="News"
                                 width={600}
                                 height={300}
@@ -170,25 +171,10 @@ export default function Home() {
                         <h3 className="text-xl font-bold text-gray-800 mb-4">
                             Layanan
                         </h3>
-                        <div className="grid grid-cols-3 gap-4">
-                            <button className="text-sm text-blue-600 hover:text-blue-800">
-                                e-Lapor
-                            </button>
-                            <button className="text-sm text-blue-600 hover:text-blue-800">
-                                KTP
-                            </button>
-                            <button className="text-sm text-blue-600 hover:text-blue-800">
-                                KUA
-                            </button>
-                            <button className="text-sm text-blue-600 hover:text-blue-800">
-                                Layanan Publik
-                            </button>
-                            <button className="text-sm text-blue-600 hover:text-blue-800">
-                                PPID
-                            </button>
-                            <button className="text-sm text-blue-600 hover:text-blue-800">
-                                Selengkapnya
-                            </button>
+                        <div className="grid grid-cols-3 gap-4 py-10">
+                            <CategoryButton icon="" text="E-Lapor" href="https://www.lapor.go.id/" />
+                            <CategoryButton icon="" text="Pembuatan KTP" href="/layanan/pembuatan-ktp" />
+                            <CategoryButton icon="" text="Pendaftaran KUA" href="/layanan/pendaftaran-kua"/>
                         </div>
                     </div>
                 </div>
@@ -196,3 +182,12 @@ export default function Home() {
         </div>
     )
 }
+
+const CategoryButton: React.FC<{ icon: string; text: string; href: string }> = ({ icon, text, href }) => (
+    <Link href={href} passHref>
+      <div className="bg-blue-800 text-white px-4 py-2 rounded flex items-center cursor-pointer">
+        <span className="mr-2">{icon}</span>
+        {text}
+      </div>
+    </Link>
+  );

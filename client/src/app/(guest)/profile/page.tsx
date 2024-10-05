@@ -92,7 +92,7 @@ export default function Home() {
                         <h3 className="font-semibold mb-4">Logo dan Lagu Daerah</h3>
                         <div className="flex items-center mb-4">
                             <img
-                                src="/api/placeholder/80/80"
+                                src="/bandarlampung.png"
                                 alt="Logo Bandar Lampung"
                                 className="w-20 h-20 mr-4"
                             />
@@ -110,7 +110,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="border p-4 rounded-lg">
-                        <h3 className="font-semibold mb-4">Agama Utama</h3>
+                        <h3 className="font-semibold mb-4">Agama Mayoritas</h3>
                         <div className="flex justify-center space-x-4">
                             <span className="text-blue-500 text-4xl">☪</span>
                             <span className="text-blue-500 text-4xl">✝</span>
@@ -129,7 +129,7 @@ export default function Home() {
                     <div className="border p-4 rounded-lg">
                         <h3 className="font-semibold mb-4">Luas Area</h3>
                         <img
-                            src="/api/placeholder/100/100"
+                            src="/balam_geografis.png"
                             alt="Peta Bandar Lampung"
                             className="w-24 h-24 mx-auto mb-4"
                         />
