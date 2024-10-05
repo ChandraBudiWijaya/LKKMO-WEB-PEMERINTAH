@@ -14,7 +14,7 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
         {/* Pengaduan Masyarakat Card */}
-        <a href="/layanan/pengaduan-masyarakat" className="bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden p-4 flex flex-col justify-between cursor-pointer hover:shadow-lg hover:scale-105 transition-shadow duration-300">
+        <a href="https://www.lapor.go.id/" className="bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden p-4 flex flex-col justify-between cursor-pointer hover:shadow-lg hover:scale-105 transition-shadow duration-300">
           <img src="/pengaduan.png" alt="Pengaduan Masyarakat" className="w-full h-60 object-cover mb-4" />
           <div>
             <h3 className="text-lg font-semibold mb-2">Pengaduan Masyarakat</h3>

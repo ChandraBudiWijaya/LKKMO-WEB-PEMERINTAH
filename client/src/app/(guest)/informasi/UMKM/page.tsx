@@ -5,7 +5,7 @@ import Link from 'next/link';
 const UMKMInfoPage: React.FC = () => {
   return (
     <div className="bg-white text-gray-800">
-      <div className="bg-gray-900 bg-opacity-70 p-4">
+      <div className="bg-blue-900 bg-opacity-50 p-4">
         <p className="text-sm">Informasi &gt; UMKM</p>
       </div>
 

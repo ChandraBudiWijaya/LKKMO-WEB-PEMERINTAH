@@ -166,7 +166,7 @@ const Navbar: React.FC = () => {
           {openDropdown === 'layanan' && (
             <div className="absolute left-1/2 transform -translate-x-1/2 top-full mt-1 bg-white rounded-md shadow-lg w-40 z-50">
               <Link
-                href="/layanan/e-lapor"
+                href="https://www.lapor.go.id/"
                 className="block px-4 py-2 text-black hover:bg-gray-200"
               >
                 E-Lapor
