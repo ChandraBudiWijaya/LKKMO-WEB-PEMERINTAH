@@ -15,7 +15,7 @@ export default function Home() {
             </section>
 
             {/* Visi Section */}
-            <section className="bg-[#0064B0] border text-center text-white p-8 rounded-lg shadow-md">
+            <section className="bg-[#013e81] border text-center text-white p-8 rounded-lg shadow-md">
                 <h2 className="text-lg font-semibold">Visi</h2>
                 <p className="mt-2 font-semibold">
                     Bandar Lampung Sehat, Cerdas, Beriman, Berbudaya, Nyaman,
@@ -66,16 +66,16 @@ export default function Home() {
                     <img
                         src="/eva_dwiana.png"
                         alt="Eva Dwiana"
-                        className="mx-auto rounded-lg shadow-md w-40 h-40"
+                        className="mx-auto rounded-lg shadow-md w-40 h-50"
                     />
                     <p className="mt-4 text-lg font-semibold">Eva Dwiana</p>
                     <p>Periode: 2021 - 2026</p>
                 </div>
                 <div className="bg-white border border-gray-300 rounded-lg shadow-md p-6 text-center">
                     <img
-                        src="/deddy_amarullah.jpg"
+                        src="/deddyamarullah.jpg"
                         alt="Deddy Amarullah"
-                        className="mx-auto rounded-lg shadow-md w-40 h-40"
+                        className="mx-auto rounded-lg shadow-md w-40 h-50"
                     />
                     <p className="mt-4 text-lg font-semibold">
                         Deddy Amarullah
@@ -86,34 +86,44 @@ export default function Home() {
 
             {/* Informasi General Section */}
             <section className="my-8 bg-white border border-gray-300 rounded-lg shadow-md p-6">
-                <h2 className="text-xl font-semibold text-center mb-6">INFORMASI GENERAL</h2>
+                <h2 className="text-xl font-semibold text-center mb-6">
+                    INFORMASI GENERAL
+                </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="border p-4 rounded-lg">
-                        <h3 className="font-semibold mb-4">Logo dan Lagu Daerah</h3>
+                        <h3 className="font-semibold mb-4">
+                            Logo dan Lagu Daerah
+                        </h3>
                         <div className="flex items-center mb-4">
                             <img
                                 src="/bandarlampung.png"
                                 alt="Logo Bandar Lampung"
-                                className="w-20 h-20 mr-4"
+                                className="w-15 h-20 mr-4"
                             />
                             <div>
                                 <p className="font-semibold">Logo</p>
-                                <p className="text-sm">Logo Bandar Lampung mencerminkan identitas dan kekayaan budaya kota.</p>
+                                <p className="text-sm">
+                                    Logo Bandar Lampung mencerminkan identitas
+                                    dan kekayaan budaya kota.
+                                </p>
                             </div>
                         </div>
                         <div className="flex items-center">
                             <span className="text-4xl mr-4">🎵</span>
                             <div>
                                 <p className="font-semibold">Lagu Daerah</p>
-                                <p className="text-sm">Tanoh Lado, Sai Bumi Ruwa Jurai, Cangget Agung dsb.</p>
+                                <p className="text-sm">
+                                    Tanoh Lado, Sai Bumi Ruwa Jurai, Cangget
+                                    Agung dsb.
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div className="border p-4 rounded-lg">
                         <h3 className="font-semibold mb-4">Agama Mayoritas</h3>
-                        <div className="flex justify-center space-x-4">
-                            <span className="text-blue-500 text-4xl">☪</span>
-                            <span className="text-blue-500 text-4xl">✝</span>
+                        <div className="flex justify-center space-x-4 gap-4">
+                            <span className="text-blue-500 text-4xl scale-150">☪</span>
+                            <span className="text-blue-500 text-4xl scale-150">✝</span>
                         </div>
                         <p className="text-center mt-4">Islam dan Kristiani</p>
                     </div>
@@ -121,9 +131,12 @@ export default function Home() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
                     <div className="border p-4 rounded-lg">
                         <h3 className="font-semibold mb-4">Lokasi</h3>
-                        <span className="text-4xl block text-center mb-4">📍</span>
+                        <span className="text-4xl block text-center mb-4 mt-8 scale-150">
+                            📍
+                        </span>
                         <p className="text-sm text-center">
-                            Bandar Lampung terletak di pesisir tenggara Pulau Sumatra, berdekatan dengan Teluk Lampung.
+                            Bandar Lampung terletak di pesisir tenggara Pulau
+                            Sumatra, berdekatan dengan Teluk Lampung.
                         </p>
                     </div>
                     <div className="border p-4 rounded-lg">
@@ -131,17 +144,21 @@ export default function Home() {
                         <img
                             src="/balam_geografis.png"
                             alt="Peta Bandar Lampung"
-                            className="w-24 h-24 mx-auto mb-4"
+                            className="w-32 h-32 mx-auto mb-4"
                         />
                         <p className="text-sm text-center">
-                            Luas wilayah Kota Bandar Lampung adalah sekitar 197,22 km² (76,15 mil persegi)
+                            Luas wilayah Kota Bandar Lampung adalah sekitar
+                            197,22 km² (76,15 mil persegi)
                         </p>
                     </div>
                     <div className="border p-4 rounded-lg">
                         <h3 className="font-semibold mb-4">Populasi</h3>
-                        <span className="text-4xl block text-center mb-4">👥</span>
+                        <span className="text-4xl block text-center mb-4 mt-8 scale-150">
+                            👥
+                        </span>
                         <p className="text-sm text-center">
-                            Populasi Kota Bandar Lampung pada pertengahan tahun 2023 mencapai sekitar 1.096.936 jiwa.
+                            Populasi Kota Bandar Lampung pada pertengahan tahun
+                            2023 mencapai sekitar 1.096.936 jiwa.
                         </p>
                     </div>
                 </div>
