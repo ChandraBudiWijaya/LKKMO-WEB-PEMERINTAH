@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
   return (
     <nav
       className={`fixed top-0 z-30 w-full transition-colors duration-300 ${
-        isScrolled || pathname !== "/" ? "bg-[#013e81] shadow-lg" : "bg-transparent"
+        isScrolled || pathname !== "/" ? "bg-[#013e81] outline outline-black/10" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto flex items-center justify-between px-4 md:px-6 h-16">
@@ -81,10 +81,10 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Centered Navigation Links */}
-        <div className="hidden lg:flex space-x-6 font-semibold relative mx-auto items-center">
+        <div className="hidden lg:flex space-x-6 font-semibold relative h-full mx-auto items-center">
           <Link
             href="/"
-            className={`text-lg px-4 py-2 flex items-center h-full ${
+            className={`text-lg px-4 flex items-center h-full ${
               pathname == "/"
                 ? "bg-white text-black underline"
                 : isScrolled || pathname !== "/"
@@ -230,7 +230,7 @@ const Navbar: React.FC = () => {
             href="/profile"
             className={`block px-4 py-2 rounded-md ${
               pathname == "/profile"
-                ? "bg-white text-black underline"
+                ? "bg-white text-black underline" 
                 : "text-gray-200"
             }`}
             onClick={() => setNavbar(false)}
