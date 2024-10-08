@@ -2,8 +2,12 @@
 
 import CategoryFilter from "@/components/categoryFilter/CategoryFilter"; // Sesuaikan dengan path ke CategoryFilter
 import BeritaCard from "@/components/beritaCard/BeritaCard"; // Sesuaikan dengan path ke BeritaCard
+import axios from "axios";
 
-export default function Home() {
+export default async function Home() {
+  const { data } = await axios.get('http://127.0.0.1:8000/api/berita/get')
+  console.log(data);
+  
   return (
     <div className="px-4 py-8 max-w-7xl mx-auto">
       {/* Header Berita */}
@@ -20,24 +24,16 @@ export default function Home() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
           </svg>
         </button>
-
+        {/* Berita card nya di loop */}
         {/* Berita Cards */}
         <div className="flex overflow-x-scroll space-x-6 pl-12 pr-12 py-4 scrollbar-hide">
-          <BeritaCard
-            imageSrc="/path-to-image.jpg"
-            category="Politik"
-            title="Eva Dwiana Legawa Tidak Diusung Partainya di Pilkada Bandar Lampung"
-          />
-          <BeritaCard
-            imageSrc="/path-to-image.jpg"
-            category="Sorotan"
-            title="Selebgram Tewas Usai Mobil Tertabrak Kereta Api di Lampung"
-          />
-          <BeritaCard
-            imageSrc="/path-to-image.jpg"
-            category="Pendidikan"
-            title="APP Group Sambut 65 Mahasiswa Magang Merdeka, Perkuat Hubungan Industri dan Dunia Pendidikan"
-          />
+          {data.data.map((dataItem) => (
+            <BeritaCard
+              imageSrc={dataItem.foto}
+              category={dataItem.kategori}
+              title={dataItem.judul}
+            />
+          ))}
           {/* Tambahkan lebih banyak BeritaCard jika diperlukan */}
         </div>
 
