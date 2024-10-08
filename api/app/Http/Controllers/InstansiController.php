@@ -36,6 +36,7 @@ class InstansiController extends Controller
         $instansi->nama_instansi = $request->nama_instansi;
         $instansi->nama_pimpinan = $request->nama_pimpinan;
         $instansi->deskripsi = $request->deskripsi;
+        $instansi->foto_kecil = $request->foto_kecil;
         $instansi->foto_instansi = $request->foto_instansi;
         $instansi->foto_pimpinan = $request->foto_pimpinan;
         $instansi->location = $request->location;
@@ -76,6 +77,7 @@ class InstansiController extends Controller
         $instansi->nama_instansi = $request->nama_instansi;
         $instansi->nama_pimpinan = $request->nama_pimpinan;
         $instansi->deskripsi = $request->deskripsi;
+        $instansi->foto_kecil = $request->foto_kecil;
         $instansi->foto_instansi = $request->foto_instansi;
         $instansi->foto_pimpinan = $request->foto_pimpinan;
         $instansi->location = $request->location;

@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('nama_instansi');
             $table->string('nama_pimpinan')->nullable();
             $table->string('deskripsi')->nullable();
+            $table->string('foto_kecil')->nullable();
             $table->string('foto_instansi')->nullable();
             $table->string('foto_pimpinan')->nullable();
             $table->string('location')->nullable();

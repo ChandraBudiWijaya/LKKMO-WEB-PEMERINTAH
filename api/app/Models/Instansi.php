@@ -15,6 +15,7 @@ class Instansi extends Model
         'nama_instansi',
         'nama_pimpinan',
         'deskripsi',
+        'foto_kecil',
         'foto_instansi',
         'foto_pimpinan',
         'location',
