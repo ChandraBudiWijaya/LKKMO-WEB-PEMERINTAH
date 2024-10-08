@@ -22,7 +22,7 @@ function Layout({ children }: { children: React.ReactNode }) {
     <div className="flex flex-col justify h-screen">
          
     <Navbar/>
-      <div className="mt-16 md:mt-24">
+      <div className="mt-16 md:mt-20">
         {children}
         {/* <ButtonBringToTop/> */}
       </div>
