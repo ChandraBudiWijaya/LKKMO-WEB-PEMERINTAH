@@ -14,6 +14,7 @@ class Instansi extends Model
     protected $fillable = [
         'nama_instansi',
         'nama_pimpinan',
+        'deskripsi',
         'foto_instansi',
         'foto_pimpinan',
         'location',
