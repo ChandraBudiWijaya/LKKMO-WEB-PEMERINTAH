@@ -19,7 +19,7 @@ export default async function Home() {
   console.log(data);
   
   return (
-    <div className="px-4 py-8 max-w-7xl mx-auto">
+    <div className="px-4 py-8 max-w-7xl mx-auto coba">
       {/* Header Berita */}
       <h1 className="text-3xl font-bold text-center mb-6">BERITA DAERAH</h1>
 
@@ -27,7 +27,7 @@ export default async function Home() {
       <CategoryFilter />
 
       {/* Berita dengan Navigasi */}
-      {/* <div className="relative flex items-center mt-8"> */}
+      <div className="relative flex items-center mt-8">
         {/* Left Navigation Button */}
         {/* <button className=" bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-full shadow-lg transition-all duration-300 z-10">
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -36,10 +36,8 @@ export default async function Home() {
         </button> */}
         {/* Berita card nya di loop */}
         {/* Berita Cards */}
-        <div className="flex overflow-x-scroll space-x-6 pl-12 pr-12 py-4 scrollbar-hide h">
+        <div className="flex overflow-x-scroll space-x-6 pl-12 pr-12 py-4 scrollbar-hide h-full">
             <Swiper
-            
-            slidesPerView={3}
             centeredSlides={true}
             spaceBetween={30}
             pagination={{
@@ -48,6 +46,20 @@ export default async function Home() {
             navigation={true}
             modules={[Pagination, Navigation]}
             className="mySwiper"
+            breakpoints={{
+              // Saat lebar layar kurang dari 640px
+              640: {
+                slidesPerView: 1, // 1 slide per view
+              },
+              // Saat lebar layar antara 640px dan 768px
+              768: {
+                slidesPerView: 2, // 2 slides per view
+              },
+              // Saat lebar layar lebih dari 768px
+              1024: {
+                slidesPerView: 3, // 3 slides per view
+              },
+            }}
           >
             {data.data.map((dataItem) => (
             <SwiperSlide key={dataItem.id_berita}>
@@ -68,7 +80,7 @@ export default async function Home() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
           </svg>
         </button> */}
-      {/* </div> */}
+      </div>
     </div>
   );
 }
