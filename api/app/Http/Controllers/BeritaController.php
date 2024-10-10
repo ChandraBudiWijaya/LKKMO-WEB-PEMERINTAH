@@ -34,7 +34,6 @@ class BeritaController extends Controller
     {
         $berita = new Berita();
         $berita->judul = $request->judul;
-        $berita->kategori = $request->kategori;
         $berita->foto = $request->foto;
         $berita->isi = $request->isi;
         $berita->author = $request->author;
@@ -68,7 +67,6 @@ class BeritaController extends Controller
         }
 
         $berita->judul = $request->judul;
-        $berita->kategori = $request->kategori;
         $berita->foto = $request->foto;
         $berita->isi = $request->isi;
         $berita->author = $request->author;
