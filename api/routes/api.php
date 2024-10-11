@@ -4,7 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UmkmController;
 use App\Http\Controllers\BeritaController;
-use App\Http\Controllers\InstansiController;
+use App\Http\Controllers\InstitusiController;
 
 
 Route::middleware('auth:sanctum')->group(function() {
@@ -19,14 +19,21 @@ Route::middleware('auth:sanctum')->group(function() {
     Route::put('/umkm/update/{id}', [UmkmController::class, 'update']);
     Route::delete('/umkm/delete/{id}', [UmkmController::class, 'destroy']);
 
-    Route::post('/instansi/post', [InstansiController::class, 'store']);
-    Route::put('/instansi/update/{id}', [InstansiController::class, 'update']);
-    Route::delete('/instansi/delete/{id}', [InstansiController::class, 'destroy']);
+    Route::post('/institusi/post', [InstitusiController::class, 'store']);
+    Route::put('/institusi/update/{id}', [InstitusiController::class, 'update']);
+    Route::delete('/institusi/delete/{id}', [InstitusiController::class, 'destroy']);
+    
+    Route::post('/institusi/detail-institusi/post', [InstitusiController::class, 'store']);
+    Route::put('/institusi/detail-institusi/update/{id}', [InstitusiController::class, 'update']);
+    Route::delete('/institusi/detail-institusi//delete/{id}', [InstitusiController::class, 'destroy']);
+
 });
 
 Route::get('/berita/get', [BeritaController::class, 'index']);
 Route::get('/berita/{id}', [BeritaController::class, 'show']);
 Route::get('/umkm/get', [UmkmController::class, 'index']);
 Route::get('/umkm/{id}', [UmkmController::class, 'show']);
-Route::get('instansi/get', [InstansiController::class, 'index']);
-Route::get('instansi/{id}', [InstansiController::class, 'show']);
+Route::get('institusi/get', [InstitusiController::class, 'index']);
+Route::get('institusi/{id}', [InstitusiController::class, 'show']);
+Route::get('institusi/detail-institusi/get', [InstitusiController::class, 'index']);
+Route::get('institusi/detail-institusi/{id}', [InstitusiController::class, 'show']);
