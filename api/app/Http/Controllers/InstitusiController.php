@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Instansi;
+use App\Models\Institusi;
 use Illuminate\Http\Request;
 
-class InstansiController extends Controller
+class InstitusiController extends Controller
 {
     public function index()
     {
-        $instansi = Instansi::all();
+        $instansi = Institusi::all();
         return response()->json([
             'data' => $instansi
         ], 200);
@@ -17,11 +17,11 @@ class InstansiController extends Controller
 
     public function show($id)
     {
-        $instansi = Instansi::find($id);
+        $instansi = Institusi::find($id);
 
         if(!$instansi) {
             return response()->json([
-                'message' => 'Instansi tidak ditemukan'
+                'message' => 'Institusi tidak ditemukan'
             ], 404);
         }
 
@@ -32,7 +32,7 @@ class InstansiController extends Controller
 
     public function store(Request $request)
     {
-        $instansi = new Instansi();
+        $instansi = new Institusi();
         $instansi->nama_instansi = $request->nama_instansi;
         $instansi->nama_pimpinan = $request->nama_pimpinan;
         $instansi->deskripsi = $request->deskripsi;
@@ -52,13 +52,13 @@ class InstansiController extends Controller
 
         if(!$instansi) {
             return response()->json([
-                'message' => 'Instansi gagal ditambahkan'
+                'message' => 'Institusi gagal ditambahkan'
             ], 400);
         }
 
         return response()->json(
             array(
-                "message" => "Instansi berhasil ditambahkan",
+                "message" => "Institusi berhasil ditambahkan",
                 "data" => $instansi
             )
         );
@@ -66,11 +66,11 @@ class InstansiController extends Controller
 
     public function update(Request $request, $id)
     {
-        $instansi = Instansi::find($id);
+        $instansi = Institusi::find($id);
 
         if(!$instansi) {
             return response()->json([
-                'message' => 'Instansi tidak ditemukan'
+                'message' => 'Institusi tidak ditemukan'
             ]);
         }
 
@@ -89,7 +89,7 @@ class InstansiController extends Controller
 
         return response()->json(
             array(
-                "message" => "Instansi berhasil diupdate",
+                "message" => "Institusi berhasil diupdate",
                 "data" => $instansi
             )
         );
@@ -97,11 +97,11 @@ class InstansiController extends Controller
 
     public function destroy($id)
     {
-        $instansi = Instansi::find($id);
+        $instansi = Institusi::find($id);
 
         if(!$instansi) {
             return response()->json([
-                'message' => 'Instansi tidak ditemukan'
+                'message' => 'Institusi tidak ditemukan'
             ]);
         }
 
@@ -109,7 +109,7 @@ class InstansiController extends Controller
 
         return response()->json(
             array(
-                "message" => "Instansi berhasil dihapus",
+                "message" => "Institusi berhasil dihapus",
                 "data" => $instansi
             )
         );

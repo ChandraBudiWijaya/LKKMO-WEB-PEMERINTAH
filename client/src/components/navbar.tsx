@@ -137,7 +137,7 @@ const Navbar: React.FC = () => {
             >
               Informasi
             </Link>
-            {/* Dropdown Menu for UMKM and Instansi */}
+            {/* Dropdown Menu for UMKM and Institusi */}
             {openDropdown === "informasi" && (
               <div className="absolute left-1/2 transform -translate-x-1/2 top-full mt-1 bg-white rounded-md shadow-lg w-40 z-50">
                 <Link
@@ -269,7 +269,7 @@ const Navbar: React.FC = () => {
                 href="/informasi/instansi"
                 className="block px-4 py-2 text-white"
               >
-                Instansi
+                Institusi
               </Link>
             </div>
           )}
