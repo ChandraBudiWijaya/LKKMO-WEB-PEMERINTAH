@@ -47,9 +47,9 @@ const UMKMInfoPage: React.FC = () => {
           
           {/* Categories */}
           <div className="flex space-x-40 justify-around">
-            <CategoryButton icon="🍽️" text="KULINER" />
-            <CategoryButton icon="🎨" text="KERAJINAN" />
-            <CategoryButton icon="👚" text="FASHION" />
+            <CategoryButton icon="🍽️" text="KULINER" page='/informasi/UMKM/detail-umkm'/>
+            <CategoryButton icon="🎨" text="KERAJINAN" page='/informasi/UMKM/detail-umkm' />
+            <CategoryButton icon="👚" text="FASHION" page='/informasi/UMKM/detail-umkm'/>
           </div>
         </div>
       </div>
@@ -57,11 +57,14 @@ const UMKMInfoPage: React.FC = () => {
   );
 };
 
-const CategoryButton: React.FC<{ icon: string; text: string }> = ({ icon, text }) => (
+const CategoryButton: React.FC<{ icon: string; text: string; page:string }> = ({ icon, text, page }) => (
+  <a href={page}>
   <button className="bg-blue-900 text-white font-bold px-10 text-xl py-5 rounded flex items-center cursor-pointer">
     <span className="mr-2">{icon}</span>
     {text}
   </button>
+
+  </a>
 );
 
 export default UMKMInfoPage;

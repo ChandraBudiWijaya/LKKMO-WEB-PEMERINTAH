@@ -90,3 +90,5 @@ const NewsDetailPage: React.FC = () => {
 };
 
 export default NewsDetailPage;
+
+export default NewsDetailPage;

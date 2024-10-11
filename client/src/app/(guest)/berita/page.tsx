@@ -4,7 +4,7 @@ import BeritaCard from "@/components/beritaCard/BeritaCard"; // Sesuaikan dengan
 import axios from "axios";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
+// Import Swiper styles 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -22,13 +22,7 @@ export default function Home() {
 
       {/* Berita dengan Navigasi */}
       <div className="relative flex items-center mt-8">
-        {/* Left Navigation Button */}
-        <button className=" bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-full shadow-lg transition-all duration-300 z-10">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
-
+       
         {/* Berita Cards */}
         <div className="flex overflow-x-scroll space-x-6 pl-12 pr-12 py-4 scrollbar-hide h-full">
             <Swiper
