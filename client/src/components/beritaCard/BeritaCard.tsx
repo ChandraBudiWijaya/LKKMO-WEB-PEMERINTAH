@@ -7,7 +7,7 @@ const BeritaCard = ({ imageSrc, category, title }) => {
       <img
         src={imageSrc}
         alt={title}
-        className="w-full h-48 object-cover"
+        className="w-20 h-20 aspect-square object-cover"
       />
 
       {/* Category and Title */}
