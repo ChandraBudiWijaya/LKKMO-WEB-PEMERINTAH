@@ -1,7 +1,8 @@
 'use client';
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface NewsDetail {
   id: number;
@@ -24,10 +25,29 @@ const NewsDetailPage: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
-  // Penggunaan data dummy, jadi tidak perlu fetching data dengan axios
-
   return (
     <div className="container mx-auto px-4 py-6">
+      {/* Tombol Back */}
+      <div className="mb-4">
+          <a href="/berita" className="text-blue-600 hover:underline flex items-center">
+            <svg
+              className="w-5 h-5 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+            Kembali
+          </a>
+      </div>
+
       <h1 className="text-3xl font-bold mb-4">{news?.judul}</h1>
       <div className="flex flex-col md:flex-row md:items-start">
         <div className="md:w-1/2 mb-4 md:mb-0">
@@ -52,7 +72,7 @@ const NewsDetailPage: React.FC = () => {
           </div>
         </div>
         <div className="md:w-1/2 md:pl-6">
-          <p className="text-lg">{news?.isi}</p>
+          <p className="text-lg text-justify">{news?.isi}</p>
         </div>
       </div>
       {/* Daftar berita tambahan di bawah */}
