@@ -36,13 +36,13 @@ export default function institusiList() {
   return (
     <div className="px-4 py-8 max-w-7xl mx-auto">
       {/* Header institusi */}
-      <h1 className="text-3xl font-bold text-center mb-6">DAFTAR institusi</h1>
+      <h1 className="text-3xl font-bold text-center mb-6">DAFTAR INSTITUSI</h1>
 
       {/* institusi dengan Navigasi */}
       <div className="relative flex items-center mt-8">
         {/* institusi Cards */}
         <Swiper
-            style={{ height: '480px' }}
+            style={{ height: '450px' }}
           centeredSlides={true}
           spaceBetween={10}
           pagination={{

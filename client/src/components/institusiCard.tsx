@@ -36,7 +36,7 @@ export default function InstitusiCard({ institusi }: InstitusiCardProps) {
       </div>
 
       {/* Button */}
-      <Link href={`/informasi/institusi/detail-institusi/${institusi.id}`} passHref>
+      <Link href={`/informasi/institusi-pendidikan/detail-institusi`} passHref>
         <button className="bg-blue-600 text-white py-2 px-4 rounded-xl w-full hover:bg-blue-700 transition-colors duration-300 text-sm font-medium">
           Lihat Profil Institusi
         </button>
