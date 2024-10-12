@@ -24,7 +24,7 @@ export default function InstitusiCard({ institusi }: InstitusiCardProps) {
         <img
           src={"/Logo_ITERA.png"}  // Ganti dengan logo dari API jika tersedia
           alt={"Institut Teknologi Sumatera"}
-          className="w-10 h-10 object-cover bg-transparent" // Ganti bentuk menjadi bulat
+          className="w-40 h-40 object-cover bg-transparent" // Ganti bentuk menjadi bulat
         />
       </div>
 

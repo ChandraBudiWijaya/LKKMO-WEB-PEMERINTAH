@@ -30,7 +30,7 @@ const DaftarInstitusi: React.FC = () => {
             </div>
 
             {/* Institutions Container */}
-            <div className="container mx-auto py-20 flex justify-center items-center px-4 md:px-0">
+            <div className="container mx-auto py-8 flex justify-center items-center px-4 md:px-0">
                 {/* Left Arrow for Slider Navigation */}
                 <button className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-full shadow-lg transition-all duration-300 mr-4">
                     <svg
