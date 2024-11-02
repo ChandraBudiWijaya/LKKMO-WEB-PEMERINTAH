@@ -21,7 +21,7 @@ function Footer() {
                     <p>Telp : (+62) 081215143321</p>
                     <p>Jl. Cendrawasih Bandarlampung, Lampung, Indonesia</p>
                     <p>Faks : (+62) 081215143321</p>
-                    <p>Surel : bdl@bandarlampung.go.id</p>
+                    <p>Surel : <span><a href="bdl@bandarlampung.go.id"></a>bdl@bandarlampung.go.id</span></p>
                 </div>
 
                 {/* Social media icons */}

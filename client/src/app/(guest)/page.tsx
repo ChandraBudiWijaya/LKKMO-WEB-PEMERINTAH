@@ -149,20 +149,24 @@ export default function Home() {
                     <div className="bg-blue-600 text-white p-8 rounded-lg shadow-lg text-center">
                         <h3 className="text-xl font-bold mb-4">Informasi</h3>
                         <div className="flex flex-col space-y-4">
+                            <a href="/informasi/institusi-pendidikan">
                             <button
-                                className={`py-3 rounded-lg text-white ${
+                                className={`py-3 w-full rounded-lg text-white ${
                                     isInfoActive ? 'bg-blue-800' : 'bg-blue-700'
                                 } hover:bg-blue-800`}
                                 onClick={() => setIsInfoActive(!isInfoActive)}>
                                 Daftar Institusi
                             </button>
+                               </a>
+                            <a href="/informasi/UMKM">
                             <button
-                                className={`py-3 rounded-lg text-white ${
+                                className={`py-3 w-full  rounded-lg text-white ${
                                     isInfoActive ? 'bg-blue-800' : 'bg-blue-700'
                                 } hover:bg-blue-800`}
                                 onClick={() => setIsInfoActive(!isInfoActive)}>
                                 UMKM
                             </button>
+                                </a>
                         </div>
                     </div>
 
