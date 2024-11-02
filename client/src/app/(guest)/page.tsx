@@ -121,6 +121,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                            <a href=""></a>
                             <Image
                                 src="/berita.png"
                                 alt="News"
@@ -129,6 +130,7 @@ export default function Home() {
                                 className="w-full object-cover"
                             />
                             <div className="p-6">
+                                <a href="/berita">
                                 <h3 className="font-bold text-lg text-gray-700 mb-2">
                                     Berita Lainnya
                                 </h3>
@@ -136,6 +138,8 @@ export default function Home() {
                                     Informasi terbaru seputar kegiatan di Bandar
                                     Lampung...
                                 </p>
+                                
+                                </a>
                             </div>
                         </div>
                     </div>

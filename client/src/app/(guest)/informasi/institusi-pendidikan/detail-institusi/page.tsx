@@ -79,11 +79,11 @@ const DetailInstansi: React.FC = () => {
             <div className="flex justify-center gap-4 mb-8">
                 <div className="flex items-center justify-center bg-blue-500 text-white px-4 py-2 rounded transition">
                     <Calendar className="mr-2" />
-                    Tahun Berdiri
+                    Tahun Berdiri: 2014
                 </div>
                 <div className="flex items-center justify-center bg-blue-500 text-white px-4 py-2 rounded transition">
                     <GraduationCap className="mr-2" />
-                    Akreditasi
+                    Akreditasi: B
                 </div>
                 <div className="flex items-center justify-center bg-blue-500 text-white px-4 py-2 rounded transition">
                     <Phone className="mr-2" />
@@ -93,7 +93,7 @@ const DetailInstansi: React.FC = () => {
 
             {/* Footer Section */}
             <div className="text-center pb-8">
-                <a href="#" className="text-blue-600 hover:underline text-sm">
+                <a href="https://www.itera.ac.id/" target='blank' className="text-blue-600 hover:underline text-sm">
                     Selengkapnya &gt; silahkan hubungi web Halaman Utama - ITERA
                 </a>
             </div>
