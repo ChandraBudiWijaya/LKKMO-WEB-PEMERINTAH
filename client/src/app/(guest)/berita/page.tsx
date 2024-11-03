@@ -55,14 +55,14 @@ export default function Home() {
           </div>
           <div className="snap-center">
             <BeritaCard
-              imageSrc="/berita.png"
+              imageSrc="/berita1.jpg"
               category="Sorotan"
-              title="Selebgram Tewas Usai Mobil Tertabrak Kereta Api di Lampung"
+              title="ITERA Kukuhkan 4.477 Mahasiswa Baru"
             />
           </div>
           <div className="snap-center">
             <BeritaCard
-              imageSrc="/berita.png"
+              imageSrc="/berita2.jpeg"
               category="Pendidikan"
               title="APP Group Sambut 65 Mahasiswa Magang Merdeka, Perkuat Hubungan Industri dan Dunia Pendidikan"
             />

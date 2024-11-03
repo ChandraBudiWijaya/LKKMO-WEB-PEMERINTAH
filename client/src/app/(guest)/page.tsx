@@ -103,7 +103,7 @@ export default function Home() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                             <Image
-                                src="/berita.png"
+                                src="/berita1.jpg"
                                 alt="News"
                                 width={600}
                                 height={300}
@@ -111,13 +111,12 @@ export default function Home() {
                             />
                             <div className="p-6">
                                 <h3 className="font-bold text-lg text-gray-700 mb-2">
-                                    Pintu Surga ITERA
-                                </h3>
-                                <p className="text-sm text-gray-500">
-                                    Gedung Kuliah Umum (GKU 1) ITERA adalah
-                                    salah satu fasilitas penting bagi
-                                    mahasiswa...
-                                </p>
+                                ITERA Kukuhkan 4.477 Mahasiswa Baru
+                           </h3>
+                                <p className="text-sm text-gray-500 line-clamp-1">
+                                Institut Teknologi Sumatera (Itera) resmi mengukuhkan 4.477 mahasiswa baru dalam sidang terbuka penerimaan mahasiswa baru tahun akademik 2024/2025, di Pelataran Gedung Kuliah Umum 1 Itera, Senin (12/8/2024).
+
+Rektor Itera Prof. Dr. I Nyoman Pugeg Aryantha mengatakan, dengan penambahan mahasiswa baru tersebut, secara keseluruhan, total mahasiswa aktif Itera sampai dengan tahun 2024 sebanyak 25.794 mahasiswa.                              </p>
                             </div>
                         </div>
                         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
